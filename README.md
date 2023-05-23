@@ -1,7 +1,7 @@
 # ShareTweetBackend
 Backend part of shareTweet
 
-This is the backend server for 
+This is the backend server for https://github.com/san0808/ShareTweet
 
 Don't forget to create your .env file and add  these credentials 
 
