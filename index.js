@@ -29,14 +29,11 @@ app.get('/api/tweet',async (req, res) => {
     const axios = require('axios');
           
     // Make a GET request to the Twitter API to get the details of the tweet
-    const tweetResponse = await axios.get(
-      `https://api.twitter.com/1.1/statuses/show.json?id=${tweetId}`,
-      {
-        headers: {
-          Authorization: `Bearer ${BearerToken}`
-        }
+    const tweetResponse = await axios.get(`https://api.twitter.com/2/tweets/${tweetId}`, {
+      headers: {
+        Authorization: `Bearer ${bearerToken}`
       }
-    );
+    });
     
           let mediaUrl
             // Extract the tweet details from the response
